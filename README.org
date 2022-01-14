@@ -1,0 +1,9 @@
+#+TITLE: My Guix packages
+
+To install them:
+#+begin_src bash
+for i in $(find -type f -iname "*.scm")
+do
+    guix package -f $i
+done
+#+end_src
