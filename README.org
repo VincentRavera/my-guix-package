@@ -2,7 +2,7 @@
 
 To install them:
 #+begin_src bash
-for i in $(find -type f -iname "*.scm")
+for i in $(find -type f -iname "*.scm" ! -iname "profile-*")
 do
     guix package -f $i
 done
